@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    background-color:white;
+
+}
+
+header .titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 45px;
+}
+
+h1{
+    color: black;
+}
+
+header .titulo h2 a{
+    /* width: 150px; */
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #90e0ff;
+    font-size: auto;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: small;
+    position: fixed;
+    top: 20px;
+    right: 45px;
+}
+
+header nav{
+    width: 100%;
+    background-color: #caf0f8;
+}
+
+header nav ul{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    padding-right: 45px;
+    justify-content: end;
+    gap: 10px;
+}
+
+header nav ul li:hover{
+    border-right: solid 3px #023e8a;
+    border-left: solid 3px #023e8a;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #023e8a;
+}
+
+.imagenPortada{
+    width: 100%;
+    background-color: #00b4d8;
+    background-image: url(../images/sonrisa.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagenEquipo{
+    width: 100%;
+    background-color: #00b4d8;
+    background-image: url(../images/equipo.jpg);
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.publicaciones{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 10%;
+    padding: 50px 45px;
+}
+
+.publicaciones .imgPub{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+    gap: 20px;
+}
+
+footer{
+    width: 100%;
+    background-color: #03045e;
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px 45px;
+}
+
+footer .iconos ul{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding: 10px;
+}
+
+footer h6 a{
+    color: whitesmoke;
+}
+
+.colPrincipales{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 45px;
+}
+
+.principal{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.colSecundarios{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 45px;
+}
+
+.secundario{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.principal img{
+    width: 30vh;
+    margin: auto;
+}
+
+.secundario img{
+    width: 20vh;
+}
+
+.tratamientos{
+    width: 100%;
+    display: flex;
+    padding: 20px 45px;
+    justify-content: center;
+    align-content: center;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.tratamientos div{
+    max-width: 33%;
+    max-height: 50vh;
+    min-height: 210px;
+    min-width: 210px;
+    text-align: center;
+    padding: 2% 1%;
+}
+
+.tratamientos h3{
+    padding: 1% 10px;
+}
+
+.tratamientos p{
+    font-size: 14px;
+    padding: 2% 2%;
+}
+
+.trat1{
+    background-color: #00b4d8;
+    color: #f5f5f5;
+}
+
+.trat2{
+    background-color: #caf0f8;
+    color: #00b4d8;
+}
+.trat3{
+    background-color: #90e0ff;
+    color: black;
+}
+
+.especialidades{
+    width: 100%;
+    display: flex;
+    padding: 20px 45px;
+    justify-content: center;
+    align-content: center;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.especialidades div{
+    max-width: 33%;
+    max-height: 50vh;
+    min-height: 210px;
+    min-width: 210px;
+    text-align: center;
+    padding: 2% 1%;
+}
+
+.especialidades h3{
+    padding: 1% 10px;
+}
+
+.especialidades p{
+    font-size: 14px;
+    padding: 2% 2%;
+}
+
+.esp1{
+    background-color: #00b4d8;
+    color: #f5f5f5;
+}
+.esp2{
+    background-color: #caf0f8;
+    color: #00b4d8;
+}
+.esp3{
+    background-color: #90e0ff;
+    color: black;
+}
+
+.contactoConsul{
+    display: flex;
+    text-align: center;
+    gap: 45px;
+    margin: 25px;
+}
+
+.contactoConsul ul{
+    min-width: 50%;
+}
+
+.contactoConsul ul li{
+    padding-bottom: 20px;
+}
+
+.contacto{
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contacto div{
+    padding: 5% 5%;
+}
+
+.contacto .asunto{
+    display: flex;
+    flex-direction: column;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+
+.secCita{
+    display: flex;
+    justify-content: center;
+}
+
+.cita{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: min-content;
+    padding: 20px 45px;
+    margin: 20px 45px;
+}
+
+.cita div{
+    padding: 2px 0;
+    /* border: solid 3px; */
+    margin: 5px;
+}
+
+.cita .fechaNacimiento{
+    display: flex;
+}
+
+.cita .sexo{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}

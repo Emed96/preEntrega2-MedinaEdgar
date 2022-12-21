@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreEntrega 1</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <section class="titulo">
+            <!-- LOGO Y NOMBRE DE LA CLINICA -->
+            <h1><a href="../index.html">CLINICA DENTAL</a></h1>
+            
+            <!-- BOTON PARA AGENDAR UNA CITA
+            <h2><a href="./pages/agendarCita.html">AGENDAR CITA</a></h2>     -->
+        </section>
+
+        <!-- BARRA DE NAVEGACION PARA IR A LAS DIFERENTES PAGINAS -->
+        <nav>
+            <ul>
+                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="../pages/tratamientos.html">TRATAMIENTOS</a></li>
+                <li><a href="../pages/especialidades.html">ESPECIALIDADES</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secCita">
+            <form class="cita" action="">
+                <div class="nombre">
+                    <label for="iNombreCita">Nombre: </label>
+                    <input type="text" id="iNombreCita" name="nombre" placeholder="Nombre" required size="33%"> 
+                </div>
+                <div class="apellido">    
+                    <label for="iApellidoCita">Apellido: </label>
+                    <input type="text" id="iApellidoCita" name="apellido" placeholder="Apellido" required size="33%">
+                </div>
+                <div class="sexo">
+                    <label for="iSexo">Sexo: </label>
+                    <div class="sRadio">
+                    <input type="radio" id="iSexo" name="sexo" value="h" required> Hombre
+                    <input type="radio" id="iSexo" name="sexo" value="m"> Mujer
+                    <input type="radio" id="iSexo" name="sexo" value="otro"> Otro
+                    </div>
+                </div>
+                <div class="fechaNacimiento">
+                    <label for="iFecha">Fecha de nacimiento: </label>
+                    <input type="date" name="fecha" id="iFecha" required>
+                </div>
+                <div class="numTel">
+                    <label for="iTel">Numero de telefono: </label>
+                    <input type="tel" name="tel" id="iTel" placeholder="XXX-XXX-XX-XX" maxlength="10" required size="33%">
+                </div>
+                <!-- Input donde se veran las fechas disponibles del mes -->
+                <div>
+                    <label for="cita">Fechas disponibles: </label>
+                    <input type="datetime-local" name="cita" id="cita">
+                </div>
+                <div class="btn">
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- PIE DE PAGINA CON ICONO QUE DIRIGEN A LAS DIFERENTES REDES SOCIALES, UBICACION Y A LA PAGINA DE CONTACTO -->
+        <section class="iconos">
+            <ul>
+                <li><a href="http://www.facebook.com" target="_blank"><img src="../images/bxl-facebook-circle.svg" alt="logo facebook"></li></a>
+                <li><a href="http://www.instagram.com" target="_blank"><img src="../images/bxl-instagram.svg" alt="logo instagram"></a></li>
+                <li><a href="https://goo.gl/maps/Q6GkQzjZRCPWVDWz5" target="_blank"><img src="../images/bx-map.svg" alt="logo mapa"></a></li>
+                <li><a href="./contacto.html"><img src="../images/bx-phone.svg" alt="logo telefono"></a></li>
+            </ul>
+        </section>
+        <div>
+            <!-- INFORMACION DEL INICIO DE LA CLINICA Y EL AVISO DE PRIVACIDAD -->
+            <h6>
+                SINCE 2022
+                <br>
+                <!-- EJEMPLO DE AVISO DE PRIVACIDAD -->
+                <a href="../AvisoPrivacidadEjemplo.pdf" target="_blank">Aviso de Privaciodad</a>
+            </h6>
+            
+        </div>
+    </footer>
+</body>
+</html>
