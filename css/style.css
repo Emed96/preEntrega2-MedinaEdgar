@@ -237,22 +237,23 @@ footer h6 a{
     background-color: #90e0ff;
     color: black;
 }
-/* --------------------------------------------------------------------------------------------------------------------------------------   */
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
+/* ----------------------------------------------------------Estilos contacto.html--------------------------------------------------------- */
+.secContacto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 25vh;
+    padding: 15px;
+}
 
-.contactoConsul{
+.secContacto ul{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    gap: 45px;
-    margin: 25px;
-}
-
-.contactoConsul ul{
-    min-width: 50%;
-}
-
-.contactoConsul ul li{
-    padding-bottom: 20px;
+    gap: 15px;
 }
 
 .contacto{
@@ -277,11 +278,15 @@ footer h6 a{
 .mapa{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
 
+/* --------------------------------------------------------Estilos agendarCita.html------------------------------------------------------- */
 .secCita{
     display: flex;
     justify-content: center;
+    /* border: solid 3px; */
 }
 
 .cita{
