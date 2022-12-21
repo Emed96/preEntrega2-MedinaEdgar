@@ -120,6 +120,7 @@ footer h6 a{
     color: whitesmoke;
 }
 
+/* --------------------------------------------Estilos para nosotros.html------------------------------------------------------------- */
 .colPrincipales{
     width: 100%;
     display: flex;
@@ -160,21 +161,19 @@ footer h6 a{
     width: 20vh;
 }
 
+/* -------------------------------------------------------------------------------------------------------------------------------------  */
+
+/* ------------------------------------------Estilos para tratamiento.html--------------------------------------------------------------  */
 .tratamientos{
     width: 100%;
-    display: flex;
     padding: 20px 45px;
-    justify-content: center;
-    align-content: center;
-    gap: 0px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
 }
 
 .tratamientos div{
-    max-width: 33%;
-    max-height: 50vh;
-    min-height: 210px;
-    min-width: 210px;
+    min-height: 33vh;
     text-align: center;
     padding: 2% 1%;
 }
@@ -201,22 +200,18 @@ footer h6 a{
     background-color: #90e0ff;
     color: black;
 }
+/* -------------------------------------------------------------------------------------------------------------------------------------  */
 
+/* --------------------------------------------Estilo para especialidades.html----------------------------------------------------------  */
 .especialidades{
     width: 100%;
-    display: flex;
     padding: 20px 45px;
-    justify-content: center;
-    align-content: center;
-    gap: 0px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .especialidades div{
-    max-width: 33%;
-    max-height: 50vh;
-    min-height: 210px;
-    min-width: 210px;
+    min-height: 50vh;
     text-align: center;
     padding: 2% 1%;
 }
@@ -242,6 +237,8 @@ footer h6 a{
     background-color: #90e0ff;
     color: black;
 }
+/* --------------------------------------------------------------------------------------------------------------------------------------   */
+
 
 .contactoConsul{
     display: flex;
