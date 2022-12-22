@@ -53,6 +53,7 @@ nav ul{
 
 #check:checked ~ ul{
     right: 0%;
+    top: 80px;
 }
 
 .titulo li:hover a{
@@ -62,6 +63,57 @@ nav ul{
     padding-left: 5px;
     color: #023e8a;
     transition: 250ms;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+footer{
+    width: 100%;
+    background-color: #03045e;
+    color: whitesmoke;
+    padding: 10px 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.iconos ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+ul .icon{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon span{
+    /* display: none; */
+    gap: 20px;
+}
+
+.icon img{
+    width: 50px;
+    justify-self: center;
+}
+
+.aviso h6{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    text-align: center;
+}
+
+.aviso h6, .aviso h6 a{
+    color: whitesmoke;
+    font-size: 14px;
 }
 
 @media (min-width: 768px){
@@ -89,38 +141,24 @@ nav ul{
         transition: none;
     }
 
+    .icon span{
+        display: block;
+        font-size: 20px;
+    }
+
     footer{
-        width: 100%;
-        background-color: #03045e;
-        text-align: center;
-        color: whitesmoke;
-        padding: 10px 45px;
-    }
-
-    footer .iconos ul{
         display: flex;
-        justify-content: center;
-        gap: 45px;
-        padding: 10px;
+        flex-direction: column;
     }
 
-    footer h6 a{
-        color: whitesmoke;
+    .iconos ul{
+        flex-direction: row;
+        gap: 15px;
     }
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* --------------------------------------------Estilo para index.html---------------------------------------------------------------------- */
-/* .imgAntes{
-    width: 10%;
-    height: 10%;
-}
-
-.imgDespues{
-    width: 10%;
-    height: 10%;
-} */
-
 .publicaciones{
     display: flex;
     flex-direction: column;
@@ -181,6 +219,7 @@ article p{
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* --------------------------------------------Estilos para nosotros.html------------------------------------------------------------------ */
+
 @media (min-width: 768px){
     .imagenEquipo{
         width: 100%;
