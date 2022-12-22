@@ -3,29 +3,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-ul{
+    text-decoration: none;
     list-style: none;
 }
 
-a{
-    text-decoration: none;
+#check{
+    display: none;
 }
 /* ----------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------Estilos header y footer----------------------------------------------------------- */
+.bAgendarCita{
+    display: none;
+}
+
+.titulo{
+    background-color: #caf0f8;
+    display: flex;
+    padding: 20px 45px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+h1{
+    color: #03045e;
+}
+
+.titulo a{
+    color: #023e8a;
+}
+
+.bMenu img{
+    width: 40px;
+    height: 40px;
+}
+
+nav ul{
+    position: fixed;
+    background-color: #caf0f8;
+    right: -100%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: all .5s;
+}
+
+#check:checked ~ ul{
+    right: 0%;
+}
+
+.titulo li:hover a{
+    border-right: solid 3px #023e8a;
+    border-left: solid 3px #023e8a;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #023e8a;
+    transition: 250ms;
+}
 
 @media (min-width: 768px){
-    header .titulo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 45px;
-    }
-
-    header .titulo h2 a{
-        /* width: 150px; */
+    .bAgendarCita{
+        display: block;
         padding: 10px 20px;
         text-align: center;
         background-color: #90e0ff;
@@ -34,30 +75,18 @@ a{
         color: whitesmoke;
         font-size: small;
         position: fixed;
-        top: 20px;
+        top: 60px;
         right: 45px;
     }
 
-    header nav{
-        width: 100%;
-        background-color: #caf0f8;
+    .bMenu{
+        display: none;
     }
 
-    header nav ul{
-        display: flex;
-        width: 100%;
-        padding: 10px;
-        padding-right: 45px;
-        justify-content: end;
-        gap: 10px;
-    }
-
-    header nav ul li:hover{
-        border-right: solid 3px #023e8a;
-        border-left: solid 3px #023e8a;
-        padding-right: 5px;
-        padding-left: 5px;
-        color: #023e8a;
+    nav ul{
+        position:initial;
+        flex-direction: row;
+        transition: none;
     }
 
     footer{
@@ -82,6 +111,53 @@ a{
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* --------------------------------------------Estilo para index.html---------------------------------------------------------------------- */
+/* .imgAntes{
+    width: 10%;
+    height: 10%;
+}
+
+.imgDespues{
+    width: 10%;
+    height: 10%;
+} */
+
+.publicaciones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px 45px;
+    gap: 45px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "imgAntes imgDespues"
+        "publicacion publicacion"
+    ;
+    gap: 10px
+}
+
+article img{
+    width: 200px;
+    height: 25vh;
+    justify-self: center;
+}
+
+.imgAntes{
+    grid-area: imgAntes;
+}
+
+.imgDespues{
+    grid-area: imgDespues;
+}
+
+article p{
+    grid-area: publicacion;
+}
+
 @media (min-width: 768px){
     .imagenPortada{
         width: 100%;
@@ -91,40 +167,15 @@ a{
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        transition: 1.5s;
     }
 
     .publicaciones{
-        display: flex;
-        text-align: center;
-        justify-content: space-around;
-        gap: 10%;
-        padding: 50px 45px;
-    }
-
-    article{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "imgAntes imgDespues"
-            "publicacion publicacion"
-        ;
+        flex-direction: row;
     }
 
     article img{
         width: 100%;
-        height: 25vh;
-    }
-
-    .imgAntes{
-        grid-area: imgAntes;
-    }
-
-    .imgDespues{
-        grid-area: imgDespues;
-    }
-
-    article p{
-        grid-area: publicacion;
     }
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
