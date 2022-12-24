@@ -261,6 +261,54 @@ article p{
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* --------------------------------------------Estilos para nosotros.html------------------------------------------------------------------ */
+.colPrincipales{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.colPrincipales img{
+    width: 50%;
+}
+
+.principal{
+    text-align: center;
+    margin: auto;
+}
+
+.principal h3{
+    font-size: 16px;
+}
+
+.principal p{
+    font-size: 12px;
+}
+
+.colSecundarios img{
+    width: 15%;
+}
+
+.colSecundarios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.secundario{
+    text-align: center;
+    margin: auto;
+}
+
+.secundario h4{
+    font-size: 12px;
+}
 
 @media (min-width: 768px){
     .imagenEquipo{
@@ -274,34 +322,20 @@ article p{
     }
     
     .colPrincipales{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 20px;
         padding: 20px 45px;
     }
     
-    .principal{
-        width: 40%;
-        text-align: center;
-        margin: auto;
-        
+    .principal h3{
+        font-size: 20px;        
+    }
+
+    .principal p{
+        font-size: 16px;
     }
     
     .colSecundarios{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 20px;
+        flex-direction: row;
         padding: 20px 45px;
-    }
-    
-    .secundario{
-        width: 40%;
-        text-align: center;
-        margin: auto;
     }
     
     .principal img{
@@ -311,6 +345,10 @@ article p{
     
     .secundario img{
         width: 20vh;
+    }
+
+    .secundario h4{
+        font-size: 16px;
     }
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */

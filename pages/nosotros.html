@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PreEntrega 2</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -38,13 +39,13 @@
 
         <!-- SECCION COLABORADORES PRINCIPALES -->
         <section class="colPrincipales">
-            <div class="principal">
+            <div class="principal" data-aos="zoom-in-right">
                 <img src="../images/avatarHombre2.png" alt="colaborador principal 1">
                 <h3>NOMBRE DEL COLABORADOR</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit dolore rem excepturi perferendis ducimus nihil mollitia dolor beatae tempore accusantium libero error a voluptatum quod blanditiis, vel minus! Necessitatibus.</p>
             </div>
 
-            <div class="principal">
+            <div class="principal" data-aos="zoom-in-left">
                 <img src="../images/avatarMujer1.png" alt="colaborador principal 2">
                 <h3>NOMBRE DEL COLABORADOR</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aspernatur esse minus ipsam, nobis veritatis praesentium doloremque incidunt error laudantium eligendi quasi ipsum voluptate voluptatibus! Inventore at asperiores odit rem.</p>
@@ -52,7 +53,7 @@
         </section>
 
         <!-- SECCION COLABORADORES SECUNDARIOS -->
-        <section class="colSecundarios">
+        <section class="colSecundarios" data-aos="zoom-out-up">
             <div class="secundario">
                 <img src="../images/avatarHombre1.png" alt="colaborador 1">
                 <h4>NOMBRE DEL COLABORADOR</h4>
@@ -91,5 +92,10 @@
             
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
