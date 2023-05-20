@@ -1,0 +1,10 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+.CartWidget {
+    display: flex;
+    cursor: pointer;
+}
+
+.cartIcon {
+    font-size: 1.5rem;
+}
