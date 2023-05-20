@@ -1,0 +1,41 @@
+.Catalogo h2{
+    color: black;
+}
+
+.ItemListContainer {
+    display: flex;
+    flex: 0 0 33;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ItemContainer {
+    flex: 0 0 30%;
+}
+
+.ItemContainer .ItemDetail {
+    display: grid;
+    grid-template-areas: 
+    "ID ID"
+    "TIPO PRECIO";
+    justify-content: center;
+    
+}
+
+.ItemDetail .ItemId {
+    grid-area: ID;
+    color: gray;
+}
+
+.ItemContainer h3 {
+    color: black;
+}
+
+.ItemContainer p span{
+    color: black;
+    display: block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

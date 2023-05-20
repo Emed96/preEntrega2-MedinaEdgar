@@ -1,0 +1,92 @@
+[
+    {
+        "CODIGO":"BP017+SS",
+        "NOMBRE":"TERMO-AISLANTE PLUS",
+        "TIPO":"ACERO",
+        "PRECIO": 360
+    },
+    {
+        "CODIGO":"BP087+SS",
+        "NOMBRE":"TERMO-AISLANTE PLUS",
+        "TIPO":"ACERO",
+        "PRECIO": 380
+    },
+    {
+        "CODIGO":"HS-2700",
+        "NOMBRE":"VASO-AISLANTE SKINNY",
+        "TIPO":"ACERO",
+        "PRECIO": 330
+    },
+    {
+        "CODIGO":"B17064",
+        "NOMBRE":"VASO-WHISKERO",
+        "TIPO":"ACERO",
+        "PRECIO": 290
+    },
+    {
+        "CODIGO": "A17188",
+        "NOMBRE": "TERMO-MATE",
+        "TIPO": "ACRILICO",
+        "PRECIO": 180
+    },
+    {
+        "CODIGO": "A010232-MET",
+        "NOMBRE": "GLITTER STAR",
+        "TIPO": "ACRILICO",
+        "PRECIO": 180
+    },
+    {
+        "CODIGO": "A22013",
+        "NOMBRE": "OPTIX TUMBLE",
+        "TIPO": "ACRILICO",
+        "PRECIO": 190
+    },
+{
+        "CODIGO": "A22007",
+        "NOMBRE": "OPTIX TUMBLER 20",
+        "TIPO": "ACRILICO",
+        "PRECIO": 220
+    },
+    {
+        "CODIGO": "C20043M",
+        "NOMBRE": "BUBBLE TUMBLER MATE",
+        "TIPO": "ACRILICO",
+        "PRECIO": 200
+    },
+    {
+        "CODIGO": "C20043G",
+        "NOMBRE": "BUBBLE TUMBLER",
+        "TIPO": "ACRILICO",
+        "PRECIO": 200
+    },
+    {
+        "CODIGO": "A16059M",
+        "NOMBRE": "BOTELLA POP",
+        "TIPO": "ACRILICO",
+        "PRECIO": 160
+    },
+    {
+        "CODIGO": "A17064M",
+        "NOMBRE": "BABY TUMBLER",
+        "TIPO": "ACRILICO",
+        "PRECIO": 150
+    },
+    {
+        "CODIGO":"VA0136",
+        "NOMBRE":"CAFETERO",
+        "TIPO":"PLASTICO",
+        "PRECIO": 28
+    },
+    {
+        "CODIGO":"GPE0001",
+        "NOMBRE":"VASO-CHUPON",
+        "TIPO":"PLASTICO-CHUPON",
+        "PRECIO": 18
+    },
+    {
+        "CODIGO":"VA2412",
+        "NOMBRE":"VASO-FIESTA STAR",
+        "TIPO":"PLASTICO",
+        "PRECIO": 38
+    }
+]
