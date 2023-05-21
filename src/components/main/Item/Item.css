@@ -1,0 +1,33 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+.ItemContainer {
+    flex: 0 0 30%;
+    width: min-content;
+}
+
+.ItemContainer .ItemDetail {
+    display: grid;
+    grid-template-areas: 
+    "ID ID"
+    "TIPO PRECIO";
+    justify-content: center;
+}
+
+.ItemDetail .ItemId {
+    grid-area: ID;
+    color: gray;
+}
+
+.ItemContainer p span {
+    display: block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.Detalles {
+    color: white;
+    background-color: rgba(242, 191, 209, 0.7098039216);
+    padding: 2% 5%;
+    border-radius: 10px;
+    text-shadow: 0 0 3px black;;
+}

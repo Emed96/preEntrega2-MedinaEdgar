@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import ItemList from '../ItemList/ItemList'   
 import './ItemListContainer.css'
 
 const ItemListContainer = () => {
@@ -13,7 +14,8 @@ const ItemListContainer = () => {
   return (
     <div className='Catalogo'>
         <h2>CATALOGO</h2>
-        <div className='ItemListContainer'>
+        <ItemList className='ItemList' termos={termos}/>
+        {/* <div className='ItemListContainer'>
             {termos.map(termo => {
                 return (
                     <div className='ItemContainer' key={termo.CODIGO}>
@@ -27,7 +29,7 @@ const ItemListContainer = () => {
                     </div>
                 )
             })}
-        </div>
+        </div> */}
     </div>
   )
 }

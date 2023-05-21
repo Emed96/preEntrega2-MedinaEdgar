@@ -4,3 +4,7 @@
     align-items: center;
     gap: 5%;
 }
+
+.itemMenu a {
+    color: white;
+}
