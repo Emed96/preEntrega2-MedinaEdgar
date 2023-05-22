@@ -15,21 +15,6 @@ const ItemListContainer = () => {
     <div className='Catalogo'>
         <h2>CATALOGO</h2>
         <ItemList className='ItemList' termos={termos}/>
-        {/* <div className='ItemListContainer'>
-            {termos.map(termo => {
-                return (
-                    <div className='ItemContainer' key={termo.CODIGO}>
-                        <img src={`./images/${termo.CODIGO}.png`} alt="" />
-                        <h3>{termo.NOMBRE}</h3>
-                        <p className='ItemDetail'>
-                            <span className='ItemId'>{termo.CODIGO}</span>
-                            <span className='ItemTipo'>{termo.TIPO}</span>
-                            <span className='ItemPrecio'>${termo.PRECIO}</span>
-                        </p>
-                    </div>
-                )
-            })}
-        </div> */}
     </div>
   )
 }
